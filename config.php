@@ -6,3 +6,5 @@
  * Time: 15:35
  */
 
+$db = mysqli_connect("localhost","admin", "admin");//подключение с указанием сервира и логина пароля
+mysqli_select_db("posts",$db); //указание базы данных
