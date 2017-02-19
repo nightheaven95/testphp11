@@ -33,6 +33,7 @@ cols - количество столбцов (букв) в текстовой о
  * <button type="button" class="btn btn-success">Button</button>
  *
  *  onclick="location.href='адрес куда пересылать при нажатии на кнопку'
+ * \r\n" перенос строк
 */
 
 

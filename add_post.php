@@ -13,9 +13,15 @@
  * страница добавления поста
  */
 
-
+function onDB ()
+{
+    /** $db = mysqli_connect("localhost","admin", "admin");//подключение с указанием сервира и логина пароля
+     * mysqli_select_db("posts",$db); //указание базы данных
+     */
+}
 ?>
 
 <p>Имя поста <input name="TITLE" type="text"></p>
 <p>Текст поста <textarea name="TEXT" rows="N" cols="N" value=""></textarea></p>
-<button type="button" class="btn btn-success">Добавить пост!!</button> <button type="button" class="btn btn-danger" onclick="location.href='index.php';">назад</button>
+<button type="button" class="btn btn-success"  >Добавить пост!!</button>
+<button type="button" class="btn btn-danger" onclick="location.href='index.php';">назад</button>
