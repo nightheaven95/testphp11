@@ -21,7 +21,7 @@ function onDB ()
 }
 ?>
 
-<p>Имя поста <input name="TITLE" type="text"></p>
-<p>Текст поста <textarea name="TEXT" rows="N" cols="N" value=""></textarea></p>
-<button type="button" class="btn btn-success"  >Добавить пост!!</button>
+<p>Имя поста <input name="TITLE1" type="text"></p>
+<p>Текст поста <textarea name="TEX1T" rows="N" cols="N" value=""></textarea></p>
+<button type="button" class="btn btn-success" onclick=mysqli_query("INSERT INTO posts(TITLE, TEXT) VALUES('$TITLE1','$TEXT1')") >Добавить пост!!</button>
 <button type="button" class="btn btn-danger" onclick="location.href='index.php';">назад</button>
