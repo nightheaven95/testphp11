@@ -20,6 +20,13 @@ echo "Hello World! This is first stap to me majesty";
  * текстовые поля:
 * Логин:  <input name="login" type="text">
 *Пароль: <input name="pass" type="text">
+ * Синтаксис определения текстовой области следующий:
+
+<textarea name="имя_переменной" rows="N" cols="N" value=""></textarea>
+Определение текстового поля включает три основных атрибута:
+name - имя переменной, в которой сохраняются введённые данные;
+rows - количество строк в текстовой области;
+cols - количество столбцов (букв) в текстовой области.
  * Кнопка:
 *<input name="go" type="submit" value="Войти">
  * Кнопка Bootstrap
@@ -30,7 +37,7 @@ echo "Hello World! This is first stap to me majesty";
 ?>
 
 <p>Имя поста <input name="TITLE" type="text"></p>
-<p>Текст поста <input name="TEXT" type="text"></p>
+<p>Текст поста <textarea name="TEXT" rows="N" cols="N" value=""></textarea></p>
 <p><input name="go" type="submit" value="Добавить пост"></p>
 
 <button type="button" class="btn btn-success">Button</button>
