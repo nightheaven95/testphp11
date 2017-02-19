@@ -31,6 +31,8 @@ cols - количество столбцов (букв) в текстовой о
 *<input name="go" type="submit" value="Войти">
  * Кнопка Bootstrap
  * <button type="button" class="btn btn-success">Button</button>
+ *
+ *  onclick="location.href='адрес куда пересылать при нажатии на кнопку'
 */
 
 
@@ -40,5 +42,5 @@ cols - количество столбцов (букв) в текстовой о
 <p>Текст поста <textarea name="TEXT" rows="N" cols="N" value=""></textarea></p>
 <p><input name="go" type="submit" value="Создать новый пост"></p>
 
-<button type="button" class="btn btn-success" >Создать новый пост</button>
+<button type="button" class="btn btn-success" onclick="location.href='add_post.php';"">Создать новый пост</button>
 
