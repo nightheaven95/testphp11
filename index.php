@@ -1,4 +1,8 @@
 
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
 <?php
 /**
  * Created by PhpStorm.
@@ -18,6 +22,8 @@ echo "Hello World! This is first stap to me majesty";
 *Пароль: <input name="pass" type="text">
  * Кнопка:
 *<input name="go" type="submit" value="Войти">
+ * Кнопка Bootstrap
+ * <button type="button" class="btn btn-success">Button</button>
 */
 
 
@@ -26,4 +32,6 @@ echo "Hello World! This is first stap to me majesty";
 <p>Имя поста <input name="TITLE" type="text"></p>
 <p>Текст поста <input name="TEXT" type="text"></p>
 <p><input name="go" type="submit" value="Добавить пост"></p>
+
+<button type="button" class="btn btn-success">Button</button>
 
