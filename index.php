@@ -1,6 +1,5 @@
 
 <?php
-
 /**
  * Created by PhpStorm.
  * User: Андрей
@@ -20,6 +19,7 @@ echo "Hello World! This is first stap to me majesty";
  * Кнопка:
 *<input name="go" type="submit" value="Войти">
 */
+
 
 ?>
 
