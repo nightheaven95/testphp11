@@ -38,7 +38,7 @@ cols - количество столбцов (букв) в текстовой о
 
 <p>Имя поста <input name="TITLE" type="text"></p>
 <p>Текст поста <textarea name="TEXT" rows="N" cols="N" value=""></textarea></p>
-<p><input name="go" type="submit" value="Добавить пост"></p>
+<p><input name="go" type="submit" value="Создать новый пост"></p>
 
-<button type="button" class="btn btn-success">Button</button>
+<button type="button" class="btn btn-success" >Создать новый пост</button>
 
