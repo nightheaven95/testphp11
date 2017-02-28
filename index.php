@@ -1,9 +1,14 @@
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Мой блог</title>
 
+</head>
 <link rel="stylesheet" href="css/bootstrap.css">
 
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
-
-
+<form class="form-horizontal">
+    <div class="control-group">
 
 <?php
 /**
@@ -38,7 +43,7 @@ cols - количество столбцов (букв) в текстовой о
 
 */
 
-
+include_once("config.php");
 ?>
 
 <p>Имя поста <input name="TITLE" type="text"></p>
@@ -47,3 +52,5 @@ cols - количество столбцов (букв) в текстовой о
 
 <button type="button" class="btn btn-success" onclick="location.href='add_post.php' ;">Создать новый пост</button>
 
+    </div>
+</form>
