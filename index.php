@@ -17,9 +17,23 @@
  * Date: 18.02.2017
  * Time: 15:33
  */
+function get_posts(){
+
+    /**
+    тело функции
+     */
+    return array();
+}
+
+;
+function get_post_by_id($id)
+{};
+
 
 echo "Hello World! This is first stap to me majesty";
 
+
+;
 
 /** создание текстовых полей и кнопки
  * эти строки нужно ввожить вне скрипта php
@@ -40,14 +54,14 @@ cols - количество столбцов (букв) в текстовой о
  * <button type="button" class="btn btn-success">Button</button>
  *
  *  onclick="location.href='адрес куда пересылать при нажатии на кнопку'
-
+'<p><a href="posts.php?post=' .$query['id']. '">Читать далее</a></p>'
 */
 
 include_once("config.php");
 ?>
 
 <p>Имя поста <input name="TITLE" type="text"></p>
-<p>Текст поста <textarea name="TEXT" rows="N" cols="N" value=""></textarea></p>
+<p>Текст поста <textarea name="TEXT" rows="N" cols="N" value=""> </textarea></p>
 <p><input name="go" type="submit" value="Создать новый пост"></p>
 
 <button type="button" class="btn btn-success" onclick="location.href='add_post.php' ;">Создать новый пост</button>
