@@ -2,6 +2,7 @@
 
 <script src="js/bootstrap.min.js" type="text/javascript"></script> <!-- подключение Bootstrap -->
 
+<form action = "/add_post.php" method="POST">
 
 <?php
 /**
@@ -12,16 +13,21 @@
  *
  * страница добавления поста
  */
+function save_post_to_db($title, $text){
+    /** текст функции */
+};
 
-function onDB ()
+
+if  (!empty($_POST["title"]) && !empty($_POST["text"]))
 {
-    /** $db = mysqli_connect("localhost","admin", "admin");//подключение с указанием сервира и логина пароля
-     * mysqli_select_db("posts",$db); //указание базы данных
-     */
+     save_post_to_db($_POST["title"], $_POST["text"]);
+    header('location/index.php');
+    exit;
+
 }
 ?>
 
-<p>Имя поста <input name="TITLE1" type="text"></p>
-<p>Текст поста <textarea name="TEX1T" rows="N" cols="N" value=""></textarea></p>
-<button type="button" class="btn btn-success" onclick=mysqli_query("INSERT INTO posts(TITLE, TEXT) VALUES('$TITLE1','$TEXT1')") >Добавить пост!!</button>
+
+<button type="button" class="btn btn-success" onclick= >Добавить пост!!</button>
 <button type="button" class="btn btn-danger" onclick="location.href='index.php';">назад</button>
+</form>
