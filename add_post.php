@@ -2,7 +2,8 @@
 
 <script src="js/bootstrap.min.js" type="text/javascript"></script> <!-- подключение Bootstrap -->
 
-<form action = "/add_post.php" method="POST">
+<form action = "/add_post.php" method="POST"class="form-horizontal">
+    <div class="control-group">
 
 <?php
 /**
@@ -18,16 +19,18 @@ function save_post_to_db($title, $text){
 };
 
 
-if  (!empty($_POST["title"]) && !empty($_POST["text"]))
-{
-     save_post_to_db($_POST["title"], $_POST["text"]);
-    header('location/index.php');
-    exit;
+if (!empty($_POST["title"]) && !empty($_POST["text"])) {
 
-}
+    save_post_to_db($_POST["title"], $_POST["text"]);
+    header("Location: /index.php");
+    exit;
+};
 ?>
 
 
-<button type="button" class="btn btn-success" onclick= >Добавить пост!!</button>
+    <p>Имя поста <input name="TITLE" type="text"></p>
+    <p>Текст поста <textarea name="TEXT" rows="N" cols="N" value=""></textarea></p>
+<button type="button" class="btn btn-success" onclick=  >Добавить пост!!</button>
 <button type="button" class="btn btn-danger" onclick="location.href='index.php';">назад</button>
+    </div>
 </form>
