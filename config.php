@@ -4,7 +4,13 @@
  * User: Андрей
  * Date: 18.02.2017
  * Time: 15:35
+ *$conn = new PDO('mysql:host=localhost;dbname=myDatabase', ) подключение PDO
  */
 
-$db = mysqli_connect("localhost","admin", "admin");//подключение с указанием сервира и логина пароля
-mysqli_select_db("posts",$db); //указание базы данных
+
+return [
+    "host"=>"localhost",
+"database"=>"posts",
+    "user"=>"admin",
+    "password"=>"admin"
+];
