@@ -23,7 +23,7 @@ echo "Hello World! This is first stap to me majesty";
 * Логин:  <input name="login" type="text">
 *Пароль: <input name="pass" type="text">
  * Синтаксис определения текстовой области следующий:
-
+phpinfo() вся инфа о сборке пхп
 <textarea name="имя_переменной" rows="N" cols="N" value=""></textarea>
 Определение текстового поля включает три основных атрибута:
 name - имя переменной, в которой сохраняются введённые данные;
