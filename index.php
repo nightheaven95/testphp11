@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="css/bootstrap.css">
 
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
-<form class="form-horizontal">
+<form action = "/index.php" method="POST" class="form-horizontal">
     <div class="control-group">
 
 <?php
@@ -21,19 +21,30 @@ function get_posts(){
 
     /**
     тело функции
+     * $f =mysqli_query("select * from id, title, created_at, likes order by created_at DESC");
      */
     return array();
 }
 
 ;
 function get_post_by_id($id)
-{};
+{
+    /**
+     * тело функции
+     * $f = mysqli_query("SELECT * from posts where id = $id") ;
+     */
+};
 
 
 echo "Hello World! This is first stap to me majesty";
+/**
+if ($id = $_POST("id")) {                   //если ид равно ид поста, пишет ошибку так как нуно строковое имя.
+    get_post_by_id(($_POST["id"]));           //выполнить функцию по ID
+    header("Location: /posts.php");            //вывод posts.php как я понимаю
+    exit;
+};
+*/
 
-
-;
 
 /** создание текстовых полей и кнопки
  * эти строки нужно ввожить вне скрипта php
