@@ -4,20 +4,15 @@
  * User: Андрей
  * Date: 18.02.2017
  * Time: 15:35
- *$conn = new PDO('mysql:host=localhost;dbname=myDatabase', ) подключение PDO
  *
-mysqli_connect("host","user","password","database") ;
  */
 
+defined("MY_BLOG") or die('Access denied!');
 
 return [
     "host"=>"localhost",
-"database"=>"posts",
+    "database"=>"posts",
     "user"=>"admin",
     "password"=>"admin"
 
 ];
-
-?>
-
-
